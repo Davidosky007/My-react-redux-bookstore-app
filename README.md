@@ -16,7 +16,7 @@ Magic-books Inc. is a fictional company based in Germany. They have requested my
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://bukstur-app.herokuapp.com/)
 
 
 ## Getting Started
