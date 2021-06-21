@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Bookstore App
 
 > One paragraph statement about the project.
 
@@ -10,9 +10,9 @@ Magic-books Inc. is a fictional company based in Germany. They have requested my
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- React
+- Redux
+- Heroku
 
 ## Live Demo
 
