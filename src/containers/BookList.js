@@ -36,4 +36,4 @@ const mapStateToProps = (state) => ({
   books: state.books,
 });
 
-export default BookList;
+export default connect(mapStateToProps(BookList));
