@@ -13,11 +13,11 @@ const Book = ({ book, handleRemoveBook }) => (
 );
 
 Book.propTypes = {
-  book: PropTypes.objectOf(PropTypes.shape({
-    id: PropTypes.objectOf.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
-  })).isRequired,
+  }).isRequired,
   handleRemoveBook: PropTypes.func.isRequired,
 };
 

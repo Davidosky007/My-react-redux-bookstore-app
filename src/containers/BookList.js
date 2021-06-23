@@ -26,11 +26,17 @@ const BooksList = ({ books }) => (
 );
 
 BooksList.propTypes = {
-  books: PropTypes.arrayOf(PropTypes.instanceOf(Object)),
+  books: PropTypes.arrayOf(PropTypes.any),
 };
 
 BooksList.defaultProps = {
-  books: [],
+  books: [
+    {
+      bookId: 1,
+      title: 'Learning Redux',
+      category: 'Learning',
+    },
+  ],
 };
 
 const mapStateToProps = (state) => ({
