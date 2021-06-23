@@ -24,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone this repository with: git clone `https://github.com/Davidosky007/My-react-redux-bookstore-app.git` using your terminal or command line.
 
-- Change to the project directory by entering cd "my_calculator" in the terminal
+- Change to the project directory by entering cd "My-react-redux-bookstore-app" in the terminal
 
 - Next run npm install to install the necessary dependencies
 
