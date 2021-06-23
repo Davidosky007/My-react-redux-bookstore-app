@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint linebreak-style: ["error", "windows"] */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -5,30 +6,31 @@ import { connect } from 'react-redux';
 import Book from '../components/Book';
 import { removeBook } from '../actions';
 
-const BookList = ({ books }) => (
+const BooksList = ({ books }) => (
   <div>
     <table>
       <thead>
         <tr>
-          <th>Book ID</th>
-          <th>TITLE</th>
-          <th>CATEGORY</th>
+          <th>BOOK ID</th>
+          <th>Title</th>
+          <th>Category</th>
         </tr>
       </thead>
       <tbody>
         {books && books.length
           ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={() => removeBook(book)} />)
-          : <div>No Booklist to show!</div>}
+          : alert('No booklist to show!')}
       </tbody>
     </table>
   </div>
+
 );
 
-BookList.propTypes = {
+BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.instanceOf(Object)),
 };
 
-BookList.defaultProps = {
+BooksList.defaultProps = {
   books: [],
 };
 
@@ -36,4 +38,4 @@ const mapStateToProps = (state) => ({
   books: state.books,
 });
 
-export default connect(mapStateToProps(BookList));
+export default connect(mapStateToProps)(BooksList);
