@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
 import { CREATE_BOOK, REMOVE_BOOK } from '../actions/index';
 
 const booksReducer = (state = [], action) => {

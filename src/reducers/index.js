@@ -1,4 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
 import { combineReducers, createStore } from 'redux';
 import booksReducer from './books';
 
