@@ -18,7 +18,7 @@ const BooksList = ({ books }) => (
       <tbody>
         {books && books.length
           ? books.map((book) => <Book key={`book-${book.id}`} book={book} handleRemoveBook={() => removeBook(book)} />)
-          : alert('No booklist to show!')}
+          : <tr><td>No booklist to show!</td></tr>}
       </tbody>
     </table>
   </div>
