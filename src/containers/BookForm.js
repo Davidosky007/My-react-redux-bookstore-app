@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import { createBook } from '../actions';
 
 const BooksForm = ({ createBook }) => {
@@ -19,7 +20,7 @@ const BooksForm = ({ createBook }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     createBook({
-      id: Math.floor(Math.random() * 100),
+      id: uuidv4(),
       title: title.trim(),
       category,
     });
