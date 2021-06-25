@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
-import booksReducer from './books';
+import books from './books';
+import filter from './filter';
 
 const configureStore = combineReducers({
-  books: booksReducer,
+  books, filter,
 });
 
 export default configureStore;
