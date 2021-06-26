@@ -29,7 +29,7 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <div>
+    <div className="add-buk-main">
       <form onSubmit={onSubmit}>
         <input
           type="text"

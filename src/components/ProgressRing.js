@@ -18,7 +18,7 @@ class ProgressRing extends Component {
         width={radius * 2}
       >
         <circle
-          stroke="white"
+          stroke="#0290ff"
           fill="transparent"
           strokeWidth={stroke}
           strokeDasharray={`${this.circumference} ${this.circumference}`}

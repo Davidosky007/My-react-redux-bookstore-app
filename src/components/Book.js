@@ -2,14 +2,31 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => (
-  <tr>
-    <td>{book.id}</td>
-    <td>{book.title}</td>
-    <td>{book.category}</td>
-    <td>
-      <button type="button" onClick={() => handleRemoveBook(book)}>Delete</button>
-    </td>
-  </tr>
+  <div className="buks">
+    <div>
+      <div className="buk-cat">
+        <span>{book.category}</span>
+      </div>
+      <div>
+        <h3>{book.title}</h3>
+      </div>
+      <div>
+        <span className="auth-name">Author Name</span>
+      </div>
+      <span className="remove-sect">
+        <ul>
+          <li>Comments</li>
+          <li>
+            {' '}
+            <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          </li>
+          <li>Edit</li>
+        </ul>
+      </span>
+    </div>
+
+  </div>
+
 );
 
 Book.propTypes = {

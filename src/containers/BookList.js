@@ -2,6 +2,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { Icon } from '@iconify/react';
+import userAvatarFilledAlt from '@iconify-icons/carbon/user-avatar-filled-alt';
 import Book from '../components/Book';
 import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
@@ -15,23 +17,30 @@ const BooksList = ({
   const filterChange = ({ target: { value } }) => changeFilter(value);
   return (
     <div>
-      <h1>Book Store</h1>
-      <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
-      <table>
-        <thead>
-          <tr>
-            <th>BOOK ID</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Delete</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books.filter((book) => book.category === filter || filter === 'All').map((book) => (
-            <Book key={`book-${book.id}`} book={book} handleRemoveBook={handleRemoveBook} />
-          ))}
-        </tbody>
-      </table>
+      <div className="main-nav">
+        <div className="nav-left">
+          <a href="https://bukstur-app.herokuapp.com/" className="nav-main-title">Bookstore CMS</a>
+          <span className="nav-books">BOOKS</span>
+          <span className="cat-nav">CATEGORIES</span>
+        </div>
+        <div className="nav-icon">
+          <a href="https://bukstur-app.herokuapp.com/">
+            <Icon icon={userAvatarFilledAlt} color="#0290ff" width="45px" height="45px" />
+          </a>
+        </div>
+      </div>
+      <div className="float-rit">
+        <span className="filter">
+          Filtered by
+          {' '}
+          <CategoryFilter handleFilterChange={(e) => { filterChange(e); }} />
+        </span>
+      </div>
+      <section className="main-books">
+        {books.filter((book) => book.category === filter || filter === 'All').map((book) => (
+          <Book key={`book-${book.id}`} book={book} handleRemoveBook={handleRemoveBook} />
+        ))}
+      </section>
     </div>
   );
 };
