@@ -36,6 +36,7 @@ const BooksForm = ({ createBook }) => {
           value={title}
           placeholder="Title"
           onChange={updateTitleChange}
+          required
         />
         <select value={category} onChange={updateCategoryChange}>
           {categories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
