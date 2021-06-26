@@ -16,16 +16,14 @@ const Book = ({ book, handleRemoveBook }) => {
         <div>
           <span className="auth-name">Author Name</span>
         </div>
-        <span className="remove-sect">
-          <ul>
-            <li>Comments</li>
-            <li>
-              {' '}
-              <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
-            </li>
-            <li>Edit</li>
-          </ul>
-        </span>
+        <ul className="remove-sect">
+          <li className="buk-comments">Comments</li>
+          <li className="buk-remove">
+            {' '}
+            <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
+          </li>
+          <li className="buk-edit">Edit</li>
+        </ul>
       </div>
       <div className="main-prog">
         <ProgressRing
