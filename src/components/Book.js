@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ProgressRing from './ProgressRing';
 
 const Book = ({ book, handleRemoveBook }) => {
-  const progressVal = Math.floor(Math.random() * 90);
+  const progressVal = Math.floor(Math.random() * 97);
   return (
     <div className="buks">
       <div>
@@ -18,17 +18,19 @@ const Book = ({ book, handleRemoveBook }) => {
         </div>
         <ul className="remove-sect">
           <li className="buk-comments">Comments</li>
+          <span className="line-1" />
           <li className="buk-remove">
             {' '}
             <button type="button" onClick={() => handleRemoveBook(book)}>Remove</button>
           </li>
+          <span className="line-2" />
           <li className="buk-edit">Edit</li>
         </ul>
       </div>
       <div className="main-prog">
         <ProgressRing
-          radius={60}
-          stroke={5}
+          radius={80}
+          stroke={7}
           progress={progressVal}
         />
         <div className="complete">
@@ -40,13 +42,15 @@ const Book = ({ book, handleRemoveBook }) => {
         </div>
       </div>
       <div className="current-chap">
-        <div>
-          <span>CURRENT CHAPTER</span>
+        <div className="curent-margin">
+          <span className="curent-chap">CURRENT CHAPTER</span>
         </div>
-        <div>
-          <span>CHAPTER 17</span>
+        <div className="chap-margin">
+          <span className="chap">CHAPTER 17</span>
         </div>
-        <button type="button">UPDATE PROGRESS</button>
+        <div className="curent-btn">
+          <button type="button">UPDATE PROGRESS</button>
+        </div>
       </div>
     </div>
 
