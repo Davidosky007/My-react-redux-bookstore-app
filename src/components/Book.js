@@ -30,7 +30,7 @@ const Book = ({ book, handleRemoveBook }) => {
       <div className="main-prog">
         <ProgressRing
           radius={80}
-          stroke={7}
+          stroke={10}
           progress={progressVal}
         />
         <div className="complete">

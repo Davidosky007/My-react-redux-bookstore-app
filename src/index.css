@@ -67,7 +67,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 90px;
 }
 
 .nav-icon {
@@ -379,6 +379,8 @@ code {
 
 .main-form {
   margin-left: 100px;
+  align-items: center;
+  align-content: center;
 }
 
 .form-input {
@@ -395,12 +397,12 @@ code {
 .form-select {
   width: 285px;
   height: 55px;
-  margin: 19px 34px 0;
   padding: 6px 15px 9px 16px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   color: #c4c4c4;
   outline: none;
+  margin-top: 5px;
 }
 
 .form-btn {
