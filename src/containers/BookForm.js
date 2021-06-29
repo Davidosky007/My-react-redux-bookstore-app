@@ -29,19 +29,29 @@ const BooksForm = ({ createBook }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          value={title}
-          placeholder="Title"
-          onChange={updateTitleChange}
-        />
-        <select value={category} onChange={updateCategoryChange}>
-          {categories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
-        </select>
-        <button type="submit">Add Book</button>
-      </form>
+    <div className="add-buk-main">
+      <hr className="form-line" />
+      <div className="form-tit">
+        <span className="title-form">ADD NEW BOOK</span>
+      </div>
+      <div className="main-form">
+        <form onSubmit={onSubmit}>
+          <input
+            className="form-input"
+            type="text"
+            value={title}
+            placeholder="Book Title"
+            onChange={updateTitleChange}
+            required
+          />
+          <select className="form-select" value={category} onChange={updateCategoryChange}>
+            {categories.map((cat) => <option value={cat} key={cat}>{cat}</option>)}
+          </select>
+          <span className="form-btn">
+            <button type="submit">Add Book</button>
+          </span>
+        </form>
+      </div>
     </div>
   );
 };

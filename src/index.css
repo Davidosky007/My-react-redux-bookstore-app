@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
 body {
   margin: 0;
   font-family:
@@ -16,6 +19,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 code {
   font-family:
     source-code-pro,
@@ -24,4 +35,397 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 99.8%;
+  height: 94px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+  align-items: center;
+  border: solid 1px #e8e8e8;
+}
+
+.nav-main-title {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #0290ff;
+  width: 240px;
+  height: 37px;
+  margin: 6px 47px 2px 0;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  font-size: 30px;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 90px;
+}
+
+.nav-icon {
+  margin-right: 94px;
+}
+
+.nav-books {
+  padding-left: 10px;
+  color: #444343;
+  width: 59px;
+  height: 16px;
+  margin: 18px 41px 11px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.cat-nav {
+  width: 105px;
+  height: 16px;
+  margin: 18px 664px 11px 41px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: #121212;
+}
+
+.float-rit {
+  float: right;
+  padding-right: 105px;
+  height: 16px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.select-filter {
+  width: 250px;
+  height: 40px;
+}
+
+.main-books {
+  display: inline-block;
+  margin-top: 80px;
+}
+
+.buks {
+  width: 1060px;
+  align-content: center;
+  height: 170px;
+  margin: 0 auto;
+  padding: 32px 147px 26px 27px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buk-cat {
+  width: 49px;
+  height: 18px;
+  margin: 0 39px 0 0;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.buk-title {
+  height: 29px;
+  margin: 3px 123px 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.auth-name {
+  width: 107px;
+  height: 19px;
+  margin: 4px 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.remove-sect {
+  display: flex;
+  justify-content: space-evenly;
+  float: left;
+  margin-left: -42px;
+  align-items: center;
+  align-content: center;
+}
+
+.buk-remove button {
+  border: none;
+  width: 54px;
+  height: 19px;
+  margin: 3px 15px 2px 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  background-color: inherit;
+  padding-left: 5px;
+}
+
+.line-1 {
+  height: 24px;
+  border: solid 1px #e8e8e8;
+}
+
+.line-2 {
+  height: 24px;
+  border: solid 1px #e8e8e8;
+}
+
+.buk-comments {
+  height: 19px;
+  margin: 3px 15px 2px 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.buk-edit {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+  height: 15px;
+  padding-left: 5px;
+}
+
+.main-prog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent {
+  color: #121212;
+  width: 68px;
+  height: 39px;
+  margin: 1px 92px 0 11px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.complete {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.curent-chap {
+  width: 126px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.curent-margin {
+  margin-bottom: 10px;
+}
+
+.chap {
+  width: 75px;
+  height: 21px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+  padding: 10px;
+  margin: 7px 10px 4px 5px;
+}
+
+.chap-margin {
+  margin-bottom: 10px;
+}
+
+.curent-btn {
+  width: 184px;
+  height: 33px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.curent-btn button {
+  border: none;
+  background-color: inherit;
+  width: 169px;
+  height: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  padding-top: 6px;
+}
+
+.add-buk-main {
+  height: 424px;
+}
+
+.form-line {
+  width: 1245px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border: solid 1px #e8e8e8;
+}
+
+.title-form {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.form-tit {
+  margin-left: 100px;
+  margin-bottom: 19px;
+}
+
+.main-form {
+  margin-left: 100px;
+  align-items: center;
+  align-content: center;
+}
+
+.form-input {
+  width: 57px;
+  height: 25px;
+  margin: 19px 34px 0 0;
+  padding: 13px 571px 13px 17px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  color: #c4c4c4;
+  outline: none;
+}
+
+.form-select {
+  width: 285px;
+  height: 55px;
+  padding: 6px 15px 9px 16px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  color: #c4c4c4;
+  outline: none;
+  margin-top: 5px;
+}
+
+.form-btn {
+  width: 184px;
+  height: 45px;
+  margin: 19px 0 0 34px;
+  padding: 12.8px 19px 14.2px 22px;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.form-btn button {
+  border: none;
+  background-color: inherit;
+  width: 143px;
+  height: 18px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
 }
